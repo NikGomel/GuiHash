@@ -98,6 +98,7 @@ void Cbash::BashHash (QByteArray X)
     Xlength = X.length();
     int n = Xlength*8/sizeBlock;
     int sizeXi = sizeBlock/8;
+    //test
  //   QByteArray Xi[n];
 
  //for (int i =0;i<192;i++)
