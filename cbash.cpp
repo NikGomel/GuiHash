@@ -120,16 +120,23 @@ void Cbash::BashHash (QByteArray X)
      S.insert(i,T0);
 
  }*/
+
+
     for (int i =0;i<n;i++)
     {
-       for (int j =0 ; j<sizeXi;j++)
-       {
+     //  for (int j =0 ; j<sizeXi;j++)
+       //{
+         //  Xi.replace(j,sizeXi,X);
            //Xi[i].insert(j,X.at(j+(i*sizeXi)));
-           Xi[j] = X.at(j+(i*sizeXi));
-       }
+         //  Xi[j] = X.at(j+(i*sizeXi));
+
+       //}
     //}
     //step 3
 
+Xi = X.mid((i*sizeXi),sizeXi);
+   /*  Xi.replace(j,sizeXi,X);
+     j = j+sizeXi;*/
     //step 4
   //  for (int i=1 ; i<=n;i++)
    // {
